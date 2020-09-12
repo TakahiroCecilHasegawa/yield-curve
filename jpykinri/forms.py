@@ -1,4 +1,4 @@
-from kinri.models import Kinri, Deposit, Future, Ois
+from jpykinri.models import Kinri, Deposit, Ois
 from django.forms import ModelForm
 
 class KinriForm(ModelForm):
@@ -10,11 +10,6 @@ class DepositForm(ModelForm):
     class Meta:
         model = Deposit
         fields = ('term', 'rate')
-
-class FutureForm(ModelForm):
-    class Meta:
-        model = Future
-        fields = ('contract', 'price', 'convexity_adj')
 
 class OisForm(ModelForm):
     class Meta:

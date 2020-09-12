@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'kinri.apps.KinriConfig',
+    'jpykinri.apps.JpykinriConfig',
     'bootstrap4',
     'fontawesome_5',
 ]

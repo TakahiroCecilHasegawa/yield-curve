@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('kinri/', include('kinri.urls')),
+    path('jpykinri/', include('jpykinri.urls')),
     path('admin/', admin.site.urls),
 ]
