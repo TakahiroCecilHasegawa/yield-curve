@@ -7,8 +7,11 @@ from kinri.forms import KinriForm, DepositForm, FutureForm, OisForm
 
 # Create your views here.
 
+#def index(request):
+    #return HttpResponse("Hello, world. You're at the polls index.")
+
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    return render(request, 'kinri/index.html')
 
 def get_ois_yield(yield_type, bid, offer):
     if yield_type == 'bid':

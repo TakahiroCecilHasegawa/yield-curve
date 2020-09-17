@@ -16,8 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from . import views
+
+app_name = 'mysite'
 urlpatterns = [
     path('kinri/', include('kinri.urls')),
+    path('', include('kinri.urls')), # for index.html
     path('jpykinri/', include('jpykinri.urls')),
     path('admin/', admin.site.urls),
 ]
